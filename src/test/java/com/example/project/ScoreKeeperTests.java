@@ -24,3 +24,5 @@ class ScoreKeeperTests {
         ScoreKeeper sk = new ScoreKeeper();
         assertEquals("000:000", sk.getScore());
 }
+
+}

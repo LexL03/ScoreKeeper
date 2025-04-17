@@ -11,11 +11,13 @@
 package com.example.project;
 
 public class ScoreKeeper {
+    private int scoreA = 0;
 
-	public String getScore(){
-		return "000:000";
-	}
+    public void scoreTeamA1() {
+        scoreA += 1;
+    }
 
-	
-
+    public String getScore() {
+        return String.format("%03d:000", scoreA);
+    }
 }

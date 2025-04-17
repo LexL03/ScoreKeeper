@@ -10,10 +10,8 @@
 
 package com.example.project;
 
-public class Calculator {
+public class ScoreKeeper {
 
-	public int add(int a, int b) {
-		return a + b;
-	}
+	
 
 }

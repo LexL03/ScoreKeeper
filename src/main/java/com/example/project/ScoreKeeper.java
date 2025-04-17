@@ -12,12 +12,18 @@ package com.example.project;
 
 public class ScoreKeeper {
     private int scoreA = 0;
+	private int scoreB = 0;
 
     public void scoreTeamA1() {
         scoreA += 1;
     }
 
+	public void scoreTeamB3(){
+		scoreB += 3;
+
+	}
+
     public String getScore() {
-        return String.format("%03d:000", scoreA);
+        return String.format("%03d:%03d", scoreA, scoreB);
     }
 }

@@ -12,6 +12,8 @@ package com.example.project;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.beans.Transient;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -32,12 +34,6 @@ public void testScoreTeamA1() {
     assertEquals("001:000", sk.getScore());
 }
 
-@Test
-public void testScoreTeamB3() {
-    ScoreKeeper sk = new ScoreKeeper();
-    sk.scoreTeamB3();
-    assertEquals("000:003", sk.getScore());
-}
 
 @Test
 public void testScoreTeamA2() {
@@ -51,6 +47,21 @@ public void testScoreTeamA3() {
     ScoreKeeper sk = new ScoreKeeper();
     sk.scoreTeamA3();
     assertEquals("003:000", sk.getScore());
+}
+
+@Test
+public void testScoreTeamB1() {
+    ScoreKeeper sk = new ScoreKeeper();
+    sk.scoreTeamB1();
+    assertEquals("000:001", sk.getScore());
+}
+
+
+@Test
+public void testScoreTeamB3() {
+    ScoreKeeper sk = new ScoreKeeper();
+    sk.scoreTeamB3();
+    assertEquals("000:003", sk.getScore());
 }
 
 

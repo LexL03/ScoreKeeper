@@ -32,5 +32,12 @@ public void testScoreTeamA1() {
     assertEquals("001:000", sk.getScore());
 }
 
+@Test
+public void testScoreTeamB3() {
+    ScoreKeeper sk = new ScoreKeeper();
+    sk.scoreTeamB3();
+    assertEquals("000:003", sk.getScore());
+}
+
 
 }

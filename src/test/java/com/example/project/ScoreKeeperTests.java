@@ -25,4 +25,12 @@ class ScoreKeeperTests {
         assertEquals("000:000", sk.getScore());
 }
 
+@Test
+public void testScoreTeamA1() {
+    ScoreKeeper sk = new ScoreKeeper();
+    sk.scoreTeamA1();
+    assertEquals("001:000", sk.getScore());
+}
+
+
 }
